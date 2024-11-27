@@ -72,6 +72,14 @@ header nav ul li a
     padding: 15%;
 }
 
+footer
+{
+    background-color: #293731;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
 footer nav ul 
 {
     list-style: none;

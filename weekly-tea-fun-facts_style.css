@@ -98,6 +98,14 @@ h1, h2, h3
     font-size: 16px;
 }
 
+footer
+{
+    background-color: #293731;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
 footer nav ul 
 {
     list-style: none;
