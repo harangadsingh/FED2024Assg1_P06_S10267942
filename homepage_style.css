@@ -3,6 +3,7 @@ body
     font-family : "League Spartan", sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #F5F5ED;
 }
 
 header 
@@ -41,12 +42,34 @@ header nav ul li a
     height: auto;
 }
 
-.section
+.section1
 {
-    background-color: #F1EFE7;
-    color: #293731;
+    background-image: url("Photos/thought-catalog-OJZB0VUQKKc-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    color: black;
     text-align: center;
-    padding: 10%;
+    padding: 20%;
+}
+
+.section2
+{
+    background-image: url("Photos/manki-kim-L82-kkEBOd0-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 20%;
+}
+
+.section3
+{
+    background-image: url("Photos/kenny-eliason-H75ExNeczEM-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 15%;
 }
 
 footer nav ul 
