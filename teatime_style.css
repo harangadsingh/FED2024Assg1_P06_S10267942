@@ -9,6 +9,12 @@
     --highlight-hover: #FFC857;
 }
 
+h1
+{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
 body 
 {
     font-family: "League Spartan", sans-serif;
@@ -50,6 +56,13 @@ header nav ul li a:hover
     color: var(--highlight-hover);
     text-decoration: underline;
 }
+
+#logo img 
+{
+    width: 20%;
+    height: auto;
+}
+
 
 .content 
 {
@@ -107,18 +120,14 @@ header nav ul li a:hover
 
 footer 
 {
-    background-color: var(--footer-bg);
+    background-color: var(--text-dark);
     color: white;
     text-align: center;
     padding: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 }
 
-footer form
-{
-    margin: 20px 0;
-}
-
-footer nav ul 
+footer nav ul
 {
     list-style: none;
     padding: 0;
@@ -132,10 +141,10 @@ footer nav ul li a
 {
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s;
 }
 
 footer nav ul li a:hover 
 {
-    color: var(--highlight-hover);
+    color: var(--highlight);
 }
