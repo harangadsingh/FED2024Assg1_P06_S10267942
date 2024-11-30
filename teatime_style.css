@@ -1,15 +1,28 @@
+:root 
+{
+    --primary-bg: #F5F5ED;
+    --secondary-bg: #FFF;
+    --accent: #DAA520;
+    --text-color: #333;
+    --header-bg: #293731;
+    --footer-bg: #293731;
+    --highlight-hover: #FFC857;
+}
+
 body 
 {
     font-family: "League Spartan", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5F5ED;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
 header 
 {
-    background-color: #293731;
-    color : white;
+    background-color: var(--header-bg);
+    color: white;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -25,45 +38,84 @@ header nav ul
     gap: 40px;
 }
 
-header nav ul li a
+header nav ul li a 
 {
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover 
+{
+    color: var(--highlight-hover);
+    text-decoration: underline;
 }
 
 .content 
 {
-    padding : 20px;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-.tea-grid
+.tea-grid 
 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
 
-.tea-type
+.tea-type 
 {
-    background-color: white;
+    background-color: var(--secondary-bg);
     border: 1px solid #DDD;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.tea-type img
+.tea-type:hover 
+{
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tea-type img 
 {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
 }
 
-footer
+.button 
 {
-    background-color: #293731;
+    background-color: var(--accent);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover 
+{
+    background-color: var(--highlight-hover);
+}
+
+footer 
+{
+    background-color: var(--footer-bg);
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+footer form
+{
+    margin: 20px 0;
 }
 
 footer nav ul 
@@ -76,14 +128,14 @@ footer nav ul
     gap: 20px;
 }
 
-footer nav ul li a
+footer nav ul li a 
 {
-    color : white;
+    color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-#logo img
+footer nav ul li a:hover 
 {
-    width: 20%;
-    height: auto;
+    color: var(--highlight-hover);
 }
