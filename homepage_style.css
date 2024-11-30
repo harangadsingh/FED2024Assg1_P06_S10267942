@@ -1,19 +1,31 @@
+:root 
+{
+    --primary-bg: #F5F5ED;
+    --secondary-bg: #D3D3A6;
+    --highlight: #FFD700;
+    --text-dark: #293731;
+}
+
 body 
 {
-    font-family : "League Spartan", sans-serif;
+    font-family: "League Spartan", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5F5ED;
+    background-color: var(--primary-bg);
 }
 
 header 
 {
-    background-color: #293731;
-    color : white;
+    background-color: var(--text-dark);
+    color: white;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header nav 
@@ -30,57 +42,94 @@ header nav ul
     gap: 40px;
 }
 
-header nav ul li a
+header nav ul li a 
 {
     color: white;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
-#logo img
+header nav ul li a:hover 
+{
+    color: var(--highlight);
+    text-decoration: underline;
+}
+
+#logo img 
 {
     width: 20%;
     height: auto;
 }
 
-.section1
+.hero 
 {
-    background-image: url("Photos/thought-catalog-OJZB0VUQKKc-unsplash.jpg");
-    background-position: center;
+    background-image: url("Photos/hero.jpg");
     background-size: cover;
-    color: black;
-    text-align: center;
-    padding: 20%;
-}
-
-.section2
-{
-    background-image: url("Photos/manki-kim-L82-kkEBOd0-unsplash.jpg");
     background-position: center;
-    background-size: cover;
-    color: black;
-    text-align: center;
-    padding: 20%;
-}
-
-.section3
-{
-    background-image: url("Photos/kenny-eliason-H75ExNeczEM-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-    color: black;
+    color: white;
     text-align: center;
     padding: 15%;
 }
 
-footer
+.button 
 {
-    background-color: #293731;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--highlight);
+    color: var(--text-dark);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.button:hover 
+{
+    background-color: #CBA135;
+}
+
+.section1, .section2, .section3 
+{
+    text-align: center;
+    padding: 20%;
+    border: 2px solid var(--secondary-bg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.section1 
+{
+    background-image: url("Photos/thought-catalog-OJZB0VUQKKc-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.section2 
+{
+    background-image: url("Photos/manki-kim-L82-kkEBOd0-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.section3 
+{
+    background-image: url("Photos/kenny-eliason-H75ExNeczEM-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 15%;
+}
+
+footer 
+{
+    background-color: var(--text-dark);
     color: white;
     text-align: center;
     padding: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 }
 
-footer nav ul 
+footer nav ul
 {
     list-style: none;
     padding: 0;
@@ -90,9 +139,33 @@ footer nav ul
     gap: 20px;
 }
 
-footer nav ul li a
+footer nav ul li a 
 {
-    color : white;
+    color: white;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
+footer nav ul li a:hover 
+{
+    color: var(--highlight);
+}
+
+@media (max-width: 768px) 
+{
+    header nav ul 
+    {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #logo img 
+    {
+        width: 30%;
+    }
+
+    .section1, .section2, .section3 
+    {
+        padding: 10%;
+    }
+}
