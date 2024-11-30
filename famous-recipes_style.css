@@ -37,6 +37,12 @@ header nav ul li a
     text-decoration: none;
 }
 
+#logo img 
+{
+    width: 20%;
+    height: auto;
+}
+
 .content 
 {
     text-align: center;
@@ -60,7 +66,7 @@ header nav ul li a
 {
     background-color: #F5F5ED;
     border: none;
-    padding: 10px 15px;
+    padding: 15px 15px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
