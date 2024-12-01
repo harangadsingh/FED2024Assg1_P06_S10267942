@@ -127,3 +127,16 @@ footer nav ul li a
     width: 20%;
     height: auto;
 }
+
+#scroll-top 
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
