@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classic Plain Teas</title>
     <link rel="stylesheet" href="classic-hot-teas_style.css"> 
+    <script src="classic-hot-tea_script.js" defer></script>
 </head>
 <body>
     <header>
         <div id="logo">
-            <img src="#" alt="The Tea Story Logo" style="height: 40px;">
+            <img src = "Photos/logo.png" alt="The Tea Story Logo">
         </div>
         <nav>
         <ul>
@@ -23,32 +24,209 @@
         </nav>
     </header>
 
-    <section class = "content">
-        <h1>Classic Plain Teas</h1>
-        <p>Select a recipe to explore:</p>
-        <div class="recipes">
-            <a href="classic-tea1.html" class="recipe-item">
-            <img src="#" alt="Recipe 1">
-            <p>Recipe 1: Earl Grey Tea</p>
-        </a>
-        <a href="classic-tea2.html" class="recipe-item">
-            <img src="#" alt="Recipe 2">
-            <p>Recipe 2: Assam Black Tea</p>
-        </a>
-        <a href="classic-tea3.html" class="recipe-item">
-            <img src="#" alt="Recipe 3">
-            <p>Recipe 3: English Breakfast Tea</p>
-        </a>
-        <a href="classic-tea4.html" class="recipe-item">
-            <img src="#" alt="Recipe 4">
-            <p>Recipe 4: Darjeeling Tea</p>
-        </a>
-        <a href="classic-tea5.html" class="recipe-item">
-            <img src="#" alt="Recipe 5">
-            <p>Recipe 5: Green Tea</p>
-        </a>
+   <section class = "recipes">
+        <h1>Classic Hot Tea Recipes</h1>
+
+        <button onclick = "showRecipe('earlGrey')">Earl Grey Tea</button>
+        <button onclick = "showRecipe('englishBreakfastTea')">English Breakfast Tea</button>
+        <button onclick = "showRecipe('darjeelingTea')">Darjeeling Tea</button>
+        <button onclick = "showRecipe('assamBlack')">Assam Black Tea</button>
+        <button onclick = "showRecipe('greenTea')">Green Tea</button>
+
+        <div id = "earlGrey" class = "recipe-info">
+            <h2>Earl Grey Tea</h2>
+            <h3>What you will need:</h3>
+            <ul>
+                <li>Tea : 1 teaspoon loose tea, or 1 tea bag</li>
+                <li>Cold Water : 1 cup [8 fl. oz]</li>
+                <li>Teapot with infuser</li>
+                <li>Tea Kettle</li>
+                <li>Electric Kettle [Optional]</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <h4>Step 1: Boil cold water.</h4>
+            <p>Use an electric tea kettle with a temperature setting if possible. Just under the boiling point is perfect at 206°F.</p>
+
+            <h4>Step 2: Warm up the teapot</h4>
+            <p>
+                Pour freshly boiled water into a teapot and swish it around. Then discard the water.
+                Warming up the teapot allows the tea to unfurl, relax, and deliver the maximum flavor. 
+                It also helps to keep the tea warm without dropping the temperature.
+            </p>
+
+            <h4>Step 3: Put the tea into the teapot and add hot water</h4>
+            <p>
+                Twinning's top tip is to “never pour boiling water over a tea bag or loose tea.” 
+                They say, “This is because the boiling water will burn the tea, it scalds it, and therefore, the tea doesn’t release all of its maximum flavors.”
+            </p>
+
+            <h4>Step 4: Cover the teapot and steep for 3-5 minutes</h4>
+            <p>
+                Black tea is best steeped between 3 and 5 minutes. I like to steep Earl Grey for 4 minutes. 
+                If you like a stronger cup of Earl Grey, brew more tea instead of steeping longer. Longer brewing can make your tea bitter.
+            </p>
+
+            <h4>Step 5: Strain tea leaves and pour the tea into a cup</h4>
+            <p>
+                Remove the tea leaves or tea bag from the teapot. Pour the tea into a cup and enjoy!
+            </p>
         </div>
-    </section>
+
+        <div id = "assamBlack" class = "recipe-info">
+            <h2>Assam Black Tea</h2>
+            <h3>What you will need:</h3>
+            <ul>
+                <li>Tea : 1 teaspoon loose tea, or 1 tea bag</li>
+                <li>Cold Water : 1 cup [8 fl. oz]</li>
+                <li>Teapot with strainer</li>
+                <li>Tea Kettle</li>
+                <li>Electric Kettle [Optional]</li>
+            </ul>
+
+            <h3>Instructions:</h3>
+            <h4>Step 1: Boil cold water.</h4>
+            <p>
+                Since tea is made with just water and tea leaves, use good quality water. Use filtered water instead of tap water if possible.
+                I recommend using an electric kettle with a temperature setting so you can be more accurate with the water temperature. Set it to 208°F.
+                Boil some extra water to warm up the teapot.
+            </p>
+
+            <h4>Step 2: Warm up the teapot</h4>
+            <p>
+                Pour a little freshly boiled water into the teapot. Swirl it around and then throw the water out.
+                I always include this step when I’m trying to brew tea properly. If you don’t warm up the teapot, there will be a big temperature drop while brewing the tea.
+            </p>
+
+            <h4>Step 3: Put Assam tea into the teapot and add hot water</h4>
+            <p>
+                To make tea stronger, always add more tea instead of brewing it for longer. A longer brew time will only make your tea bitter, not stronger.
+            </p>
+
+            <h4>Step 4: Cover the teapot and steep for 3-5 minutes</h4>
+            <p>
+                To make tea stronger, always add more tea instead of brewing it for longer. A longer brew time will only make your tea bitter, not stronger.
+            </p>
+
+            <h4>Step 5: Strain the tea leaves and pour hot tea into a cup</h4>
+            <p>
+                To sweeten your tea, add sugar, honey, or date syrup. Enjoy!
+            </p>
+        </div>
+
+        <div id = "englishBreakfastTea" class = "recipe-info">
+            <h2>English Breakfast Tea</h2>
+            <h3>What you will need:</h3>
+            <ul>
+                <li>Tea : 1 teaspoon loose tea, or 1 tea bag</li>
+                <li>Cold Water : 1 cup [8 fl. oz]</li>
+                <li>Teapot with infuser</li>
+                <li>Tea Kettle</li>
+                <li>Electric Kettle [Optional]</li>
+            </ul>
+
+            <h3>Instructions:</h3>
+            <h4>Step 1: Boil cold water.</h4>
+            <p>
+                Since tea is made with just water and tea leaves, use good quality water. Use filtered water instead of tap water if possible.
+                I recommend using an electric kettle with a temperature setting so you can be more accurate with the water temperature. Set it to 206°F.
+                Boil some extra water to warm up the teapot.
+            </p>
+
+            <h4>Step 2: Warm up the teapot</h4>
+            <p>
+                Pour a little freshly boiled water into the teapot. Swirl it around and then throw the water out.
+                I always include this step when I’m trying to brew tea properly. If you don’t warm up the teapot, there will be a big temperature drop while brewing the tea.
+            </p>
+
+            <h4>Step 3: Put English Breakfast tea into the teapot and add hot water</h4>
+            <p>
+                To make tea stronger, always add more tea instead of brewing it for longer. A longer brew time will only make your tea bitter, not stronger.
+            </p>
+
+            <h4>Step 4: Cover the teapot and steep for 3-5 minutes</h4>
+            <p>
+                To make tea stronger, always add more tea instead of brewing it for longer. A longer brew time will only make your tea bitter, not stronger.
+            </p>
+
+            <h4>Step 5: Strain the tea leaves and pour hot tea into a cup</h4>
+            <p>
+                Add milk and sugar into the cup of hot tea based on your preference. Enjoy!
+            </p>
+        </div>
+
+        <div id = "darjeelingTea" class = "recipe-info">
+            <h2>Darjeeling Tea</h2>
+            <h3>What you will need:</h3>
+            <ul>
+                <li>Tea : 1 teaspoon loose tea, or 1 tea bag</li>
+                <li>Cold Water : 1 cup [8 fl. oz]</li>
+                <li>Saucepan</li>
+                <li>Milk : 1 teaspoon [add more based on preference]</li>
+                <li>Sugar : 1 teaspoon [add more based on preference]</li>
+            </ul>
+            
+            <h3>Instructions:</h3>
+            <h4>Step 1: Boil water in saucepan</h4>
+            <p>
+                Boil water in a saucepan, when the water starts bubbling time to add the tea leaves.
+            </p>
+
+            <h4>Step 2: Add Darjeeling tea leaves</h4>
+            <p>
+                Once the tea leaves are added, cover the pan and turn off the heat immediately.
+            </p>
+
+            <h4>Step 3: Let it sit for 5-7 minutes</h4>
+            <p>
+                The leaves that are floating on top will settle down to the bottom eventually.
+            </p>
+
+            <h4>Step 4: Heat the tea again.</h4>
+            <p>
+                Tt’s time to heat the tea again for a few seconds because the tea must have gone cold in the process.
+                Do not boil, just heat them for 30 – 40 secs.
+            </p>
+
+            <h4>Step 5: Strain the tea into a cup</h4>
+            <p>
+                Time to strain the tea with a tea strainer in the cup, add the sugar and milk.
+                Mix well, and enjoy your Darjeeling tea.
+            </p>
+        </div>
+
+        <div id = "greenTea" class = "recipe-info">
+            <h2>Green Tea</h2>
+            <h3>What you will need:</h3>
+            <ul>
+                <li>Tea : 2 teaspoon loose tea, or 1 tea bag</li>
+                <li>Cold Water : 2 cups [16 fl. oz]</li>
+                <li>Saucepan with lid</li>
+                <li>Sugar or Honey : 1 teaspoon [Optional]</li>
+            </ul>
+
+            <h3>Instructions:</h3>
+
+            <h4>Step 1: Boil water in saucepan</h4>
+            <p>
+                Add 2 cups of cold water into a saucepan and boil the water. 
+            </p>
+
+            <h4>Step 2: Add 2 teaspoon of tea leaves</h4>
+            <p>
+                Once the water starts boiling, add 2 teaspoon of green tea leaves into the saucepan.
+            </p>
+
+            <h4>Step 3: Stir and let the mixture sit for 2 minutes</h4>
+            <p>
+                Stir the mixture and let it sit for 2 minutes. Switch off the heat and cover the saucepan with a lid.
+            </p>
+            
+            <h4>Step 4: Strain the tea leaves and add the tea into a cup</h4>
+            <p>
+                Strain the tea leaves and pour the tea into a cup. Add sugar or honey based on your preference. Enjoy!
+            </p>
+        </div>
+   </section>
 
     <footer>
         <p>&copy; 2024 The Tea Story</p>
